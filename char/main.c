@@ -9,7 +9,7 @@ int main()
 
     if (X >= '0' && X <= '9')
     {
-        printf("IS DIGIT");
+        printf("IS DIGIT ");
     }
     else
     {
