@@ -8,7 +8,7 @@ int main()
     scanf("%d", &n);
 
     int max = INT_MIN;
-    for (int i = 1; i < n; i++)
+    for (int i = 1; i <= n; i++)
     {
         int val;
         scanf("%d", &val);
