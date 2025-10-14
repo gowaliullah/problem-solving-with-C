@@ -1,19 +1,24 @@
 #include <stdio.h>
+#include <limits.h>
 
-int main() {
-    
+int main()
+{
+
     int n;
-    int max = 0;
+    scanf("%d", &n);
 
-    while (scanf("%d", &n))
+    int max = INT_MIN;
+    for (int i = 1; i < n; i++)
     {
-        if (max < n)
+        int val;
+        scanf("%d", &val);
+        if (val > max)
         {
-            max = n;
+            max = val;
         }
     }
-    
+
     printf("%d", max);
-    
+
     return 0;
 }
