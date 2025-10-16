@@ -19,11 +19,11 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-       if (i >= 0)
+       if (0 > a[i])
        {
+           negative += a[i];
+    } else {
            positive += a[i];
-       } else {
-        negative += a[i];
        }
        
     }
