@@ -19,7 +19,7 @@ int main()
     {
         if (sm > a[i])
         {
-            smp = i + 1;
+            smp = i + 1 ;
             sm = a[i];
         }
     }
