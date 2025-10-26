@@ -4,21 +4,26 @@
 int main()
 {
     
+
+
+
+      /*
     int t;
     scanf("%d", &t);
 
-    int s[t][3];
+    int s[t][3];    
 
     for (int i = 0; i < t; i++)
-    getc
     {
         for (int j = 0; j < 3; j++)
         {
             scanf("%d", &s[i][j]);
         }
-        
     }
+
     
+  
+
     for (int i = 0; i < t; i++)
     {
 
@@ -33,6 +38,8 @@ int main()
             printf("%d\n", dif);
         }
     }
+
+    */
 
     return 0;
 }
