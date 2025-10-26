@@ -10,11 +10,15 @@ int main()
     
     for (int i = 0; S[i] != '\0'; i++)
     {
-        int val = S[i];
-        if (S[i] <= 'z' && S[i] >= 'a')
-        {
-            fre[val - 'a']++;
-        }   
+
+        int idx = S[i] - 'a';
+        fre[idx]++; 
+
+        // int val = S[i];
+        // if (S[i] <= 'z' && S[i] >= 'a')
+        // {
+        //     fre[val - 'a']++;
+        // }   
     }
     
     for (int i = 0; i < 26; i++)
