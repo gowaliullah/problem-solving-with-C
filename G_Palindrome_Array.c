@@ -5,7 +5,7 @@ int main()
     int n;
     scanf("%d", &n);
 
-    int a[n];
+     int a[n];
     int b[n];
 
     for (int i = 0; i < n; i++)
@@ -24,7 +24,7 @@ int main()
 
         left++, right--;
     }
-    
+
     int flag = 1;
     for (int i = 0; i < n; i++)
     {
@@ -41,9 +41,6 @@ int main()
     } else {
         printf("NO");
     }
-    
-    
-    
 
     return 0;
 }
