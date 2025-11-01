@@ -2,26 +2,48 @@
 
 int main()
 {
-
     int n;
     scanf("%d", &n);
 
     int a[n];
+    int b[n];
 
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &a[i]);
+        b[i] = a[i];
     }
 
-    for (int i = 0, j = n - 1; i < j; i++, j--)
+    int left = 0, right = n - 1;
+
+    while (left < right)
     {
-        if (a[i] == a[j])
+        int temp = a[left];
+        a[left] = a[right];
+        a[right] = temp;
+
+        left++, right--;
+    }
+    
+    int flag = 1;
+    for (int i = 0; i < n; i++)
+    {
+        if (a[i] != b[i])
         {
-            printf("YES");
-        } else {
-             printf("NO");
+            flag = 0;
+            break;
         }
     }
+    
+    if (flag)
+    {
+       printf("YES");
+    } else {
+        printf("NO");
+    }
+    
+    
+    
 
     return 0;
 }
