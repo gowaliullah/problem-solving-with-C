@@ -1,45 +1,23 @@
 #include <stdio.h>
-#include <string.h>
 
 int main()
 {
-    
-
-
-
-      /*
     int t;
     scanf("%d", &t);
 
-    int s[t][3];    
-
     for (int i = 0; i < t; i++)
     {
-        for (int j = 0; j < 3; j++)
-        {
-            scanf("%d", &s[i][j]);
-        }
+        double m1, m2, d;
+        scanf("%lf %lf %lf", &m1, &m2, &d); 
+
+        double res = (m1 * d) / (m1 + m2);
+
+        int dif = d - (int)res;
+            
+        printf("%d\n", dif);    
+
     }
-
-    
-  
-
-    for (int i = 0; i < t; i++)
-    {
-
-        int days = (s[i][0] * s[i][2]) / (s[i][0] + s[i][1]);
-        int dif = s[i][2] - days;
-
-        if (dif < 0)
-        {
-            printf("%d\n", 1);
-        }
-        else {
-            printf("%d\n", dif);
-        }
-    }
-
-    */
 
     return 0;
 }
+    
