@@ -1,16 +1,18 @@
 #include <stdio.h>
 
-void printOut(int n) {
+void printOut() {
+
+        int n;
+    scanf("%d", &n);
+
      for (int i = 1; i <= n; i++)
     {
         printf("%d ", i);
     }
-}
+} 
 
 int main()
 {
-    int n;
-    scanf("%d", &n);
-    printOut(n);
+    printOut();
     return 0;
 }
