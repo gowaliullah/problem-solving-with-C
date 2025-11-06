@@ -2,17 +2,21 @@
 
 void printOut() {
 
-        int n;
+    int n;
+
     scanf("%d", &n);
 
-     for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++)
     {
-        printf("%d ", i);
+        printf(" ");
+        printf("%d", i);
     }
 } 
 
 int main()
 {
+    printf(kk);
+
     printOut();
-    return 0;
+    return 0;   
 }
