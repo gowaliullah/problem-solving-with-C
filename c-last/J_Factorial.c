@@ -18,7 +18,7 @@ int main()
     scanf("%d", &n);
     
     long long int result = facr(n);
-    printf("%d", result);
+    printf("%lld", result);
 
     return 0;
 }
