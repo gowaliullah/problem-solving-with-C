@@ -23,7 +23,7 @@ int main()
         }
         else if (m == 0)
         {
-            result = 0;
+            result = 0; 
         }
         else if (m < otherThree)
         {
